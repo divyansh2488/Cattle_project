@@ -28,7 +28,10 @@
   padding: 0px 10px;
 }
 
-
+.flex-childwrap{
+  display: flex;
+  flex-wrap: wrap;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -38,13 +41,11 @@
   height: 5em;
 }
 
-.flex-container {
+.flexer {
     display: flex;
+    flex-direction: row;
 }
 
-.flex-child {
-  flex: 1;
-}  
 #sidetable{
   position: relative;
   right: 0;
