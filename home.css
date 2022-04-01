@@ -5,65 +5,87 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:rgb(187, 235, 193);
+  background-color: rgb(187, 235, 193);
   overflow-x: hidden;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 16%;
 }
-
 .sidenav a {
   padding: 16px 16px 16px 16px;
   text-decoration: none;
   font-size: 22px;
   color: #06680e;
   display: block;
+  font-family: 'Baloo Bhai 2', cursive;
 }
 
 .sidenav a:hover {
   color: #111010;
-
 }
 
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-
-.flex-childwrap{
+.flex-child{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 55%;
+}
+.flex-childwrap {
   display: flex;
   flex-wrap: wrap;
-  padding-top:5%;
+  padding-top: 2%;
   padding-left: 2%;
 }
 
-.card{
-  padding:2%;
+.card {
+  margin: 0.8%;
+  padding: 1.3%;
+  border: 1px solid black !important;
+  font-family: 'Baloo Bhai 2', cursive;
 }
+
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 .footer {
   height: 5em;
-  background:#7d9f1c;;
+  background: #7d9f1c;
+  ;
 }
 
 .flexer {
-    display: flex;
-    flex-direction: row;
-    height:150vh;
+  display: flex;
+  flex-direction: row;
+  height: 150vh;
 }
 
-.stb{
+.stb {
   overflow-y: scroll;
-  padding:10px;
+  padding: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
 }
-#sidetable{
-  position: relative;
-  right: 0;
-  width: 25vw;
-  height:100%;
+
+#sidetable {
+  /* position: absolute; */
+  /* right: 0%; */
+  /* width: 25vw; */
+  height: 100%;
 }
-thead{
+
+thead {
   height: 3vh;
 }
