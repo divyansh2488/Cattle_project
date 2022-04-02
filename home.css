@@ -1,7 +1,36 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*header*/
+
+.jumbotron-fluid{
+  background:#7d9f1c;
+   display: flex;
+   padding: 30px;
+   width: 100%;
+}
+
+.head_img {
+  border-radius: 50px;
+   width: 60%; 
+   height: 200px;
+}
+
+@media screen and (max-width:900px) {
+  .head_img {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+
+/*header end*/
+
 .sidenav {
   height: 100%;
-  width: 25vw;
-  position: relative;
+  width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
@@ -23,6 +52,31 @@
 .sidenav a:hover {
   color: #111010;
 }
+
+.flexer {
+  display: flex;
+  flex-direction: row;
+  height: 150vh;
+}
+
+/*sidebar responsive*/
+@media screen and (max-width: 768px){
+  .flexer{
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  
+  .sidenav{
+    position: relative;
+  }
+
+  .sidenav a{
+    float: left;
+  }
+}
+
+/*sidebar end*/
 
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
@@ -65,11 +119,7 @@
   ;
 }
 
-.flexer {
-  display: flex;
-  flex-direction: row;
-  height: 150vh;
-}
+
 
 .stb {
   overflow-y: scroll;
