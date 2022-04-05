@@ -13,8 +13,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<script>
+  function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "sidenav") {
+      x.className += " responsive";
+    } else {
+      x.className = "sidenav";
+    }
+  }
+  </script>
 
 <body>
 
@@ -35,13 +46,17 @@
   <div class="flexer">
 
     <!--Side Bar-->
-    <div class="sidenav">
+    <div class="sidenav" id="navbar">
+      <a href="#">ICAR</a>
       <a href="manage_cattle.html">Manage Cattles</a>
       <a href="#b">Manage Food Items</a>
       <a href="#c">Required cattle Meal</a>
       <a href="#d">Generate Query </a>
       <a href="#e">Instructions</a>
       <a href="#f">Feedback</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!--main body content-->
