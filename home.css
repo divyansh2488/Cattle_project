@@ -53,11 +53,13 @@
   color: #111010;
 }
 
-
+<<<<<<< HEAD
 .sidenav .icon {
   display: none;
 }
 
+=======
+>>>>>>> 1c87d44272ee0b989cf9e36b7becd414ba79f6f7
 .flexer {
   display: flex;
   flex-direction: row;
@@ -65,6 +67,7 @@
 }
 
 /*sidebar responsive*/
+<<<<<<< HEAD
 @media screen and (max-width: 1200px) {
   .sidenav a:not(:first-child) {display: none;}
   .sidenav a.icon {
@@ -86,6 +89,8 @@
   }
 }
 
+=======
+>>>>>>> 1c87d44272ee0b989cf9e36b7becd414ba79f6f7
 @media screen and (max-width: 768px){
   .flexer{
     display: block;
@@ -97,9 +102,13 @@
     position: relative;
   }
 
+<<<<<<< HEAD
+  
+=======
   .sidenav a{
     float: left;
   }
+>>>>>>> 1c87d44272ee0b989cf9e36b7becd414ba79f6f7
 }
 
 /*sidebar end*/
@@ -145,6 +154,11 @@
   ;
 }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 1c87d44272ee0b989cf9e36b7becd414ba79f6f7
 .stb {
   overflow-y: scroll;
   padding: 10px;
