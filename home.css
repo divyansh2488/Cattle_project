@@ -65,10 +65,10 @@
 
 /*sidebar responsive*/
 @media screen and (max-width: 1200px) {
-  .sidenav a:not(:first-child) {display: none;}
+  .sidenav a:not(all) {display: none;}
   .sidenav a.icon {
     display: block;
-    float: right;
+    float: left;
   }
 }
 
@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
   .flexer{
     display: block;
     height: auto;
