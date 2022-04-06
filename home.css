@@ -12,9 +12,17 @@
    width: 100%;
 }
 
+.up {
+  width: 25%;
+}
+
+.down{
+  width: 75%;
+}
+
 .head_img {
   border-radius: 50px;
-   width: 60%; 
+   width: 70%; 
    height: 200px;
 }
 
@@ -25,13 +33,22 @@
   }
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:600px){
+  .up {
+    width: 50%;
+  }
+  
+  .down{
+    width: 50%;
+  }
+  
   .head_img {
-    width: 130%;
-    height: 100%;
+    width: 100%;
+    height: 60%;
   }
   .jumbotron-fluid h1,h3{
     font-size: 26px;
+    text-align: left;
   }
 }
 
@@ -109,7 +126,7 @@
 
 /*sidebar end*/
 
-
+/*main body*/
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px;
@@ -128,11 +145,30 @@
   padding-left: 2%;
 }
 
+.container-fluid .card{
+  width: 40%;
+  margin: 0;
+  margin-left: 2%;
+}
 .card {
   margin: 0.8%;
   padding: 1.3%;
   border: 1px solid black !important;
   font-family: 'Baloo Bhai 2', cursive;
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width:800px){
+  .container-fluid .card{
+    width: 60%;
+    height: auto;
+  }
+  .card {
+  margin: 3% 0% 3% 3%;
+  width: 45%;
+  height: 50vw;
+  }
 }
 
 @media screen and (max-height: 450px) {
