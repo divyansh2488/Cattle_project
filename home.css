@@ -25,6 +25,15 @@
   }
 }
 
+@media screen and (max-width:360px){
+  .head_img {
+    width: 130%;
+    height: 100%;
+  }
+  .jumbotron-fluid h1,h3{
+    font-size: 26px;
+  }
+}
 
 /*header end*/
 
@@ -64,7 +73,7 @@
 }
 
 /*sidebar responsive*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .sidenav a:not(all) {display: none;}
   .sidenav a.icon {
     display: block;
@@ -72,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .sidenav.responsive {position: relative;}
   .sidenav.responsive .icon {
     position: absolute;
@@ -85,7 +94,7 @@
   }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1024px){
   .flexer{
     display: block;
     height: auto;
@@ -99,6 +108,7 @@
 }
 
 /*sidebar end*/
+
 
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
