@@ -13,6 +13,7 @@
   }
   
   
+  
   .up {
     width: 25%;
   }
@@ -103,6 +104,7 @@
     width: 99.5%;
     display: none;
     z-index: 5;
+    border-radius: 2px;
   }
   .popup .tags{
     padding-left: 10px;
@@ -117,4 +119,18 @@
     position: relative;
     left: 40%;
     width: 30px;
+  }
+  /*form end*/
+  
+  /*main table start*/
+  .stb {
+    padding: 20px;
+  }
+  
+  thead {
+    height: 3vh;
+  }
+  #table{
+    width:80vw;
+    position: absolute;
   }
