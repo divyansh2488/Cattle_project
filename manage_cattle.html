@@ -15,13 +15,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
 </head>
 <script>
-  function windowClose() { 
+  function windowClose() {
     document.getElementById("id1").style.display = "none";
-    document.getElementById("fm").style.display = "none";
+    // document.getElementById("fm").style.display = "none";
   }
-  function windowOpen(){
-    document.getElementById("fm").style.display = "block";
-    document.getElementById("id1").style.display="block";
+  function windowOpen() {
+    // document.getElementById("fm").style.display = "block";
+    document.getElementById("id1").style.display = "block";
   }
 
 </script>
@@ -46,15 +46,15 @@
 
     <!--Side Bar-->
     <div class="sidenav">
-     <a href="#a">Manage cattles</a>
-     <a href="#b">Manage Food Items</a>
-     <a href="#c">Required cattle Meal</a>
-     <a href="#d">Generate Query </a>
-     <a href="#e">Instructions</a>
-     <a href="#f">Feedback</a>
+      <a href="#a">Manage cattles</a>
+      <a href="#b">Manage Food Items</a>
+      <a href="#c">Required cattle Meal</a>
+      <a href="#d">Generate Query </a>
+      <a href="#e">Instructions</a>
+      <a href="#f">Feedback</a>
     </div>
-        
-    <!--tabs--> 
+
+    <!--tabs-->
     <div>
 
     </div>
@@ -62,14 +62,28 @@
     <!--pop up-->
     <div class="popup" id="id1">
       <form id="fm">
-        <div style="text-align:right;"><button type="button" class="btn btn-secondary"  onclick="windowClose()">&times;</button></div>
-        <label for="fname">Cattle ID : &nbsp;</label><input type="text" id="fname" name="fname"><br>
-        <label for="lname">Cattle Name :&nbsp; </label><input type="text" id="lname" name="lname"><br>
-        <label for="fname">Cattle Weight :&nbsp; </label><input type="text" id="fname" name="fname"><br>
-        <label for="lname">Fat in Cattle Milk : &nbsp;</label><input type="text" id="lname" name="lname"><br>
-        <label for="fname">Milk Quantity : &nbsp;</label><input type="text" id="fname" name="fname"><br>
-        <label for="lname">Pregnancy State :&nbsp;</label><input type="text" id="lname" name="lname"><br>
-        <span><button type="button" class="btn btn-secondary">Save</button></span>
+        <div style="text-align:right;"><button type="button" class="btn" onclick="windowClose()">
+            <img src="photos/close.png" alt="Close">
+          </button></div>
+        <div class="tags">
+          <label for="fname">Cattle ID : &nbsp;</label><input type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="tags">
+          <label for="lname">Cattle Name :&nbsp; </label><input type="text" id="lname" name="lname"><br>
+        </div>
+        <div class="tags">
+          <label for="fname">Cattle Weight :&nbsp; </label><input type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="tags">
+          <label for="lname">Fat in Cattle Milk : &nbsp;</label><input type="text" id="lname" name="lname"><br>
+        </div>
+        <div class="tags">
+          <label for="fname">Milk Quantity : &nbsp;</label><input type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="tags">
+          <label for="lname">Pregnancy State :&nbsp;</label><input type="text" id="lname" name="lname"><br>
+        </div>
+        <span id="btnid"><button type="button" class="btn btn-secondary">Save</button></span>
       </form>
     </div>
 
@@ -80,4 +94,5 @@
   </div>
 
 </body>
+
 </html>
