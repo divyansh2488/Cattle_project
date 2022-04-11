@@ -5,7 +5,7 @@
   <title>ICAR WEB APP</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="manage_items.css">
+  <link rel="stylesheet" href="manage_food_items.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -30,8 +30,9 @@
 
   <!--header-->
   <div class="jumbotron-fluid " style=" background:#7d9f1c; display: flex;padding: 30px;">
-    <div class="col-sm-3 text-center"><img src="photos/logo.png" alt="LOGO"
-        style="border-radius: 50px; width: 60%; height: 200px;"></div>
+    <div class="col-sm-3 text-center">
+      <a href="index.html"><img class="head_img" src="photos/logo.png" alt="LOGO" style="border-radius: 50px; width: 60%; height: 200px;"></a>
+    </div>
     <div class="col-sm text-center">
       <h1> MANAGE/VEIW STOCK ITEMS</h1><br>
       <div class="row" style="height: 200px;">
@@ -40,7 +41,7 @@
         </div>
         <div class="col-sm-3" style="padding-top: 40px;">
             <div class=" btn-group">
-                <button type="button" class="btn btn-secondary" onclick="windowOpen()">ADD NEW CATTLE</button>
+                <button type="button" class="btn btn-secondary" onclick="windowOpen()">MANAGE ITEMS</button>
             </div>
         </div>
         <div class="col-sm">
@@ -58,7 +59,7 @@
     <!--Side Bar-->
     <div class="sidenav">
       <a href="manage_cattle.html">Manage cattles</a>
-      <a href="manage_items.html">Manage Food Items</a>
+      <a href="manage_food_items.html">Manage Food Items</a>
       <a href="#c">Required cattle Meal</a>
       <a href="#d">Generate Query </a>
       <a href="#e">Instructions</a>
@@ -71,20 +72,16 @@
         <thead style=" background:rgb(187, 235, 193)">
           <tr>
             <th scope="col">SR. NO.</th>
-            <th scope="col">Delete</th>
-            <th scope="col">Edit</th>
             <th scope="col">Item Name</th>
             <th scope="col">Item Quantity</th>
             <th scope="col">Energy </th>
-            <th scope="col">Protein %</th>
+            <th scope="col">Protein (in %)</th>
             <th scope="col">Cost</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th>1</th>
-            <th><a href="#"><img src="photos/close.png" alt="delete" style="height: 20px;"></th></a>
-            <th><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></th></a>
             <td></td>
             <td></td>
             <td></td>
@@ -93,8 +90,6 @@
           </tr>
           <tr>
             <th>2</th>
-            <th><a href="#"><img src="photos/close.png" alt="delete" style="height: 20px;"></th></a>
-            <th><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></th></a>
             <td></td>
             <td></td>
             <td></td>
@@ -103,8 +98,6 @@
           </tr>
           <tr>
             <th>3</th>
-            <th><a href="#"><img src="photos/close.png" alt="delete" style="height: 20px;"></th></a>
-            <th><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></th></a>
             <td></td>
             <td></td>
             <td></td>
@@ -134,7 +127,7 @@
           <label for="lname">Energy (Mcal/Kg) : &nbsp;</label><input type="text" id="lname" name="lname"><br>
         </div>
         <div class="tags">
-          <label for="fname">Cost of Food Item : &nbsp;</label><input type="text" id="fname" name="fname"><br>
+          <label for="fname">Cost of Food Item : &nbsp;</label><input type="text" id="fname" name="fname"><br><br>
         </div>
         <span id="btnid"><button type="button" class="btn btn-secondary">Save</button></span>
       </form>
