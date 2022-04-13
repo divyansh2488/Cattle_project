@@ -116,8 +116,12 @@
 }
 #fm #btnid{
   position: relative;
-  left: 40%;
-  width: 30px;
+  left: 35%;
+
+}
+#btnid .btn{
+  font-size: large;
+  width: 90px;
 }
 /*form end*/
 
