@@ -2,28 +2,131 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
 }
-.row{
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 850px !important;
+
+}
+
+#login {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.row {
     background: #7d9f1c;
     border-radius: 3px;
-    box-shadow: 12px 12px 22px grey;
+    box-shadow: -12px -12px 22px grey;
 }
-img{
+
+img {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.bt1{
-    border: none;
-    outline: none;
-    height: 50px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    font-weight: bold;
+
+form input:hover {
+    box-shadow: 4px 4px 12px rgb(188, 192, 188);
 }
-.bt1:hover{
-    background: white;
-    border:1px solid;
-    color: black;
+
+.bttn {
+    width: 100%;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid black;
+    transition: .1s ease-in-out;
+}
+
+.bttn:hover {
+    border: 2px solid blue;
+    background-color: rgb(59, 59, 250);
+    color: white;
+}
+
+
+
+form a {
+    font-size: large;
+}
+
+/* popup for signup start */
+#spopup {
+    backdrop-filter: blur(7px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 99.5%;
+    display: none;
+    z-index: 5;
+    border-radius: 2px;
+}
+
+#sfm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: large;
+    height: 80vh;
+    width: 35vw;
+    border-radius: 3px;
+    box-shadow: 12px 12px 22px grey;
+}
+
+.bttnn {
+    width: 100%;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid blue;
+    background-color: rgb(59, 59, 250);
+    transition: .1s ease-in-out;
+    color: white;
+}
+
+#spopup .bi {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    padding-top: 3px;
+    transition: .1s ease-in-out;
+}
+
+#spopup .bi:hover {
+    background-color: red;
+    color: white;
+}
+
+#spopup form h3 {
+    text-align: center !important;
+}
+
+#sfm .sin {
+    width: 40%;
+    display: inline;
+    border: 2px solid rgb(88, 87, 87);
+}
+
+#sfm .lin {
+    width: 85%;
+    border: 2px solid rgb(88, 87, 87);
+}
+
+#sfm button {
+    width: 85%;
 }

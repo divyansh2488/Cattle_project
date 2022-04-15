@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: 'Baloo Bhai 2', cursive;
 }
 
 /*header*/
@@ -46,7 +47,6 @@
   font-size: 22px;
   color: #06680e;
   display: block;
-  font-family: 'Baloo Bhai 2', cursive;
 }
 
 .sidenav a:hover {
@@ -77,6 +77,53 @@
 }
 
 /*form start*/
+/* for blur effect */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body>* {
+  flex-shrink: 0;
+}
+
+#blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-grow: 1;
+  width: 100%;
+  /* height: auto !important; */
+  z-index: 4;
+  /* backdrop-filter: blur(3.7px); */
+  background-color: orange;
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 99.5%;
+  z-index: 5;
+  border-radius: 2px;
+}
+
+.popup .tags {
+  padding-left: 10px;
+  padding-bottom: 9px;
+  padding-top: 8px;
+}
+
+.popup .tags input {
+  position: absolute;
+  right: 10px;
+}
+
 #fm {
   position: absolute;
   top: 50%;
@@ -87,42 +134,43 @@
   height: 75vh;
   width: 30vw;
   border-radius: 3px;
-  font-family: 'Baloo Bhai 2', cursive;
-  
-}
-#fm img{
-  height: 20px;  
 }
 
-.popup {
-  backdrop-filter: blur(3.7px);
+#fm .bi {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 99.5%;
-  display: none;
-  z-index: 5;
-  border-radius: 2px;
+  right: 0;
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  padding-top: 3px;
+  transition: .1s ease-in-out;
 }
-.popup .tags{
-  padding-left: 10px;
-    padding-bottom: 9px;
-    padding-top: 8px;
+
+#fm .bi:hover {
+  background-color: red;
+  color: white;
 }
-.popup .tags input{
-  position: absolute;
-  right: 10px;
+
+form input {
+  border: 2px solid grey;
+  border-radius: 4px;
 }
-#fm #btnid{
+
+form input:hover {
+  box-shadow: 4px 4px 12px rgb(188, 192, 188);
+}
+
+#fm #btnid {
   position: relative;
   left: 35%;
 
 }
-#btnid .btn{
+
+#btnid .btn {
   font-size: large;
-  width: 90px;
+  width: 100px;
 }
+
 /*form end*/
 
 /*main table start*/
@@ -133,7 +181,8 @@
 thead {
   height: 3vh;
 }
-#table{
-  width:80vw;
+
+#table {
+  width: 80vw;
   position: absolute;
 }
