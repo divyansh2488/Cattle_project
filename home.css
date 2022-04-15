@@ -56,7 +56,7 @@
 /*header end*/
 
 .sidenav {
-  height: 100%;
+  height: auto;
   width: 100%;
   z-index: 1;
   top: 0;
