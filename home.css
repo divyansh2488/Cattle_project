@@ -13,6 +13,10 @@
    width: 100%;
 }
 
+h1,h3{
+  color: white;
+}
+
 .up {
   width: 25%;
 }
@@ -56,7 +60,7 @@
 /*header end*/
 
 .sidenav {
-  height: 100%;
+  height: auto;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -86,7 +90,7 @@
 .flexer {
   display: flex;
   flex-direction: row;
-  height: 180vh;
+  height: auto;
 }
 
 /*sidebar responsive*/
@@ -136,7 +140,7 @@
 .flex-child{
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 55%;
+  flex-basis: 59%;
 }
 .flex-childwrap {
   display: flex;
@@ -204,17 +208,19 @@
 /*table start*/
 .stb {
   overflow-y: scroll;
-  padding: 10px;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 25%;
+  height:50%;
 }
 
 #sidetable {
   /* position: absolute; */
   /* right: 0%; */
   /* width: 25vw; */
-  height: 100%;
+  height: 50%;
+  width: 100%;
+  float:right;
 }
 
 thead {
