@@ -86,7 +86,7 @@
 .flexer {
   display: flex;
   flex-direction: row;
-  height: 180vh;
+  height: auto;
 }
 
 /*sidebar responsive*/
@@ -140,7 +140,7 @@
 }
 .flex-childwrap {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding-top: 2%;
   padding-left: 2%;
 }
