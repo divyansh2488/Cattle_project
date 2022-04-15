@@ -206,9 +206,10 @@
   overflow-y: scroll;
   padding: 10px;
   padding-right:0px;
+  float:right;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 20%;
+  flex-basis: 25%;
 }
 
 #sidetable {
