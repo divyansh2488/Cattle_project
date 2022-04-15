@@ -140,7 +140,7 @@
 }
 .flex-childwrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 2%;
   padding-left: 2%;
 }
