@@ -141,13 +141,14 @@ form input:hover {
   box-shadow: 4px 4px 12px rgb(188, 192, 188);
 }
 
-#fm #btnid {
-  position: relative;
-  left: 27%;
-}
-
 #btnid button {
-  width: 100px !important;
+  font-size: large;
+  font-weight: bold;
+  width: 30% !important;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /*form end*/
