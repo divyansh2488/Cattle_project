@@ -123,7 +123,12 @@
       <form id="fm">
         <i class="bi bi-x-lg" onclick="windowClose()"></i><br>
         <div class="tags mt-4">
-          <label for="food_name">Food Item Name : &nbsp;</label><input type="text" id="food_name" name="food_name"><br>
+          <label for="food_name">Food Item Name : &nbsp;</label>
+          <select id="food_name" name="food_name">
+          <option value="none" selected disabled hidden>Select Food Item</option>
+          <option value="xyz">xyz</option>  
+          </select>
+            <br>
         </div>
         <div class="tags mt-2">
           <label for="food_Quantity">Food Item Quantity :&nbsp; </label><input type="text" id="food_Quantity" name="food_Quantity"><br>
