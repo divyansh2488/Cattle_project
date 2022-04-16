@@ -77,39 +77,16 @@
 }
 
 /*form start*/
-/* for blur effect */
-html,
-body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
-body>* {
-  flex-shrink: 0;
-}
-
-#blur {
-  position: absolute;
+#id1 {
+  position: fixed;
   top: 0;
   left: 0;
-  flex-grow: 1;
-  width: 100%;
-  /* height: auto !important; */
-  z-index: 4;
-  /* backdrop-filter: blur(3.7px); */
-  background-color: orange;
+  right: 0;
+  bottom: 0;  
+  backdrop-filter: blur(6px);
   display: none;
-}
-
-.popup {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 99.5%;
-  z-index: 5;
+  z-index: 500;
   border-radius: 2px;
 }
 
@@ -160,14 +137,14 @@ form input:hover {
   box-shadow: 4px 4px 12px rgb(188, 192, 188);
 }
 
-#btnid .btn{
+#btnid .btn {
   font-size: large;
   font-weight: bold;
   width: 30% !important;
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 /*form end*/
