@@ -65,7 +65,7 @@ h1 {
 .flexer {
   display: flex;
   flex-direction: row;
-  max-height: 180vh;
+  height: 180vh;
 }
 
 .main {
