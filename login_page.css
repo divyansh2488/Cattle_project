@@ -130,3 +130,54 @@ form a {
 #sfm button {
     width: 85%;
 }
+@media screen and (min-device-width: 575px) and (max-device-width: 991px){
+    .logo{
+        height: 50vh;
+        }
+    .logo img{
+        height: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);        
+    }   
+}
+@media screen and (max-width:575px){
+    .container{
+        width: 100vw !important;
+    }
+    .logo{
+        height: 50vh;
+        
+    }
+    .logo img{
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);        
+    }   
+}
+@media screen and (min-device-width: 735px) and (max-device-width: 991px){
+
+    #sfm{
+        width: 40vh !important;
+    }
+}
+@media screen and (max-width:735px){
+    
+    #sfm{
+        width: 40vh !important;
+    }
+    #sfm .sin{
+        display: block;
+    width: 85%;
+    }
+    #sfm button{
+        margin-top: 10px !important;
+    }
+}
+
+
+
+
