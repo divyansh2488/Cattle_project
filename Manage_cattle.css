@@ -99,9 +99,10 @@ h1,h3{
   padding-top: 8px;
 }
 
-.popup .tags input {
+.popup .tags input ,select {
   position: absolute;
   right: 10px;
+  width: 60%;
 }
 
 #fm {
@@ -164,4 +165,5 @@ thead {
 #table {
   width: 80vw;
   position: absolute;
+  overflow: scroll;
 }

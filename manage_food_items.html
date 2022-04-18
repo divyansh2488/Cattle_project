@@ -31,26 +31,26 @@
   <div class="jumbotron-fluid " style=" background:#7d9f1c; display: flex;padding: 30px;">
     <div class="col-sm-3 text-center">
       <a href="index.html"><img class="head_img" src="photos/logo.png" alt="LOGO"
-          style="border-radius: 50px; width: 60%; height: 200px;"></a>
+          style="border-radius: 50px; width: auto; height: 200px;"></a>
     </div>
-    <div class="col-sm text-center">
+    <div class="col-sm-9 text-center">
       <h1> MANAGE/VEIW STOCK ITEMS</h1><br>
       <!-- <div class="row" style="height: 200px;">
         <div class="col-sm">
           <img src="photos/cow_img.jpeg" alt="cattle_food" style="height: 60%; width: 100%; border-radius: 3%;" />
         </div> -->
-        <div class="col-sm-3" style="padding-top: 40px;">
-          <div class=" btn-group">
-            <button type="button" class="btn btn-secondary" onclick="windowOpen()">MANAGE ITEMS</button>
-          </div>
-        </div>
-        <!-- <div class="col-sm">
+      <!-- <div class="col-sm-3" style="padding-top: 40px;"> -->
+      <div class=" btn-group">
+        <button type="button" class="btn btn-secondary" onclick="windowOpen()">MANAGE ITEMS</button>
+      </div>
+      <!-- </div>
+        <div class="col-sm">
           <img src="photos/farm.jpg" alt="cattle_food" style="height: 60%; width: 100%; border-radius: 3%;" />
         </div> -->
 
-      </div>
     </div>
   </div>
+  
 
   <!--<div class="container" style=" display: flex;"></div> -->
 
@@ -59,12 +59,12 @@
     <!--Side Bar-->
     <div class="sidenav">
       <a href="manage_cattle.html">Manage cattles</a>
-        <a href="manage_food_items.html">Manage Food Items</a>
-        <a href="#c">Required cattle Meal</a>
-        <a href="Generate_Query.html">Generate Query </a>
-        <a href="Instruction.html">Instructions</a>
-        <a href="about_us.html">About us</a>
-        <a href="login_page.html">Log out</a>
+      <a href="manage_food_items.html">Manage Food Items</a>
+      <a href="#c">Required cattle Meal</a>
+      <a href="Generate_Query.html">Generate Query </a>
+      <a href="Instruction.html">Instructions</a>
+      <a href="about_us.html">About us</a>
+      <a href="login_page.html">Log out</a>
     </div>
 
     <!--table-->
@@ -124,13 +124,14 @@
         <div class="tags mt-4">
           <label for="food_name">Food Item Name : &nbsp;</label>
           <select id="food_name" name="food_name">
-          <option value="none" selected disabled hidden>Select Food Item</option>
-          <option value="xyz">xyz</option>  
+            <option value="none" selected disabled hidden>Select Food Item</option>
+            <option value="xyz">xyz</option>
           </select>
-            <br>
+          <br>
         </div>
         <div class="tags mt-2">
-          <label for="food_Quantity">Food Item Quantity :&nbsp; </label><input type="text" id="food_Quantity" name="food_Quantity"><br>
+          <label for="food_Quantity">Food Item Quantity :&nbsp; </label><input type="text" id="food_Quantity"
+            name="food_Quantity"><br>
         </div>
         <div class="tags mt-2">
           <label for="protein">Protein Percentage :&nbsp; </label><input type="text" id="protein" name="protein"><br>
