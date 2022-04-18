@@ -56,7 +56,9 @@
 .sidenav .icon {
   display: none;
 }
-
+h1,h3{
+  color: white;
+}
 .flexer {
   display: flex;
   flex-direction: row;
