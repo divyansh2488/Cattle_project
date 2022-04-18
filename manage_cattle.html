@@ -17,16 +17,16 @@
 </head>
 <script>
   function windowClose() {
-     document.getElementById("id1").style.display = "none";
+    document.getElementById("id1").style.display = "none";
   }
   function windowOpen() {
-     document.getElementById("id1").style.display = "block";
+    document.getElementById("id1").style.display = "block";
   }
 
 </script>
 
 <body>
-  
+
   <!--header-->
   <div class="jumbotron-fluid " style=" background:#7d9f1c; display: flex;padding: 30px;">
     <div class="col-sm-3 text-center">
@@ -48,12 +48,12 @@
     <!--Side Bar-->
     <div class="sidenav">
       <a href="manage_cattle.html">Manage cattles</a>
-        <a href="manage_food_items.html">Manage Food Items</a>
-        <a href="#c">Required cattle Meal</a>
-        <a href="Generate_Query.html">Generate Query </a>
-        <a href="Instruction.html">Instructions</a>
-        <a href="about_us.html">About us</a>
-        <a href="login_page.html">Log out</a>
+      <a href="manage_food_items.html">Manage Food Items</a>
+      <a href="#c">Required cattle Meal</a>
+      <a href="Generate_Query.html">Generate Query </a>
+      <a href="Instruction.html">Instructions</a>
+      <a href="about_us.html">About us</a>
+      <a href="login_page.html">Log out</a>
     </div>
 
     <!--table-->
@@ -107,18 +107,18 @@
     </div>
 
     <!--pop up-->
-      <div class="popup" id="id1">
-        <form id="fm">
-          <i class="bi bi-x-lg" onclick="windowClose()"></i><br>
-          <div class="tags mt-3">
-            <label for="cattleid">Cattle ID : &nbsp;</label><input type="text" id="cattleid" name="cattleid" disable><br>
-          </div>
-          <div class="tags mt-1">
-            <label for="cattlename">Cattle Name :&nbsp; </label><input type="text" id="cattlename" name="cattlename"><br>
-          </div>
-          <div class="tags mt-1">
-            <label for="cattleweight">Cattle Weight :&nbsp; </label>
-            <select id="cattleweight" name="cattleweight">
+    <div class="popup" id="id1">
+      <form id="fm">
+        <i class="bi bi-x-lg" onclick="windowClose()"></i><br>
+        <div class="tags mt-3">
+          <label for="cattleid">Cattle ID : &nbsp;</label><input type="text" id="cattleid" name="cattleid" disable><br>
+        </div>
+        <div class="tags mt-1">
+          <label for="cattlename">Cattle Name :&nbsp; </label><input type="text" id="cattlename" name="cattlename"><br>
+        </div>
+        <div class="tags mt-1">
+          <label for="cattleweight">Cattle Weight :&nbsp; </label>
+          <select id="cattleweight" name="cattleweight">
             <option value="none" selected disabled hidden>Select Cattle Weight</option>
             <option value="200">200</option>
             <option value="250">250</option>
@@ -133,38 +133,39 @@
             <option value="700">700</option>
             <option value="750">750</option>
             <option value="800">800</option>
-            </select>
-            <br>
-          </div>
-          <div class="tags mt-1">
-            <label for="milkfat">Fat in Cattle Milk : &nbsp;</label>
-            <select name="milkfat" id="milkfat">
+          </select>
+          <br>
+        </div>
+        <div class="tags mt-1">
+          <label for="milkfat">Fat in Cattle Milk : &nbsp;</label>
+          <select name="milkfat" id="milkfat">
             <option value="none" selected disabled hidden>Select Cattle Milk Fat</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
             <option value="7">7</option>
-            </select>
-            <br>
-          </div>
-          <div class="tags mt-1">
-            <label for="milkQuantity">Milk Quantity : &nbsp;</label><input type="text" id="milkQuantity" name="milkQuantity"><br>
-          </div>
-          <div class="tags mt-1">
-            <label for="pregnancy">Pregnancy State :&nbsp;</label>
-            <select id="pregnancy" name="pregnancy">
-              <option value="none" selected disabled hidden>Select Cattle Pregnancy State</option>
-              <option value="0">Not Pregnant</option>  
+          </select>
+          <br>
+        </div>
+        <div class="tags mt-1">
+          <label for="milkQuantity">Milk Quantity : &nbsp;</label><input type="text" id="milkQuantity"
+            name="milkQuantity"><br>
+        </div>
+        <div class="tags mt-1">
+          <label for="pregnancy">Pregnancy State :&nbsp;</label>
+          <select id="pregnancy" name="pregnancy">
+            <option value="none" selected disabled hidden>Select Cattle Pregnancy State</option>
+            <option value="0">Not Pregnant</option>
             <option value="1">6-7 month</option>
             <option value="2">7-8 month</option>
             <option value="3">8-9 month</option>
-            </select>
-              <br><br>
-          </div>
-          <div id="btnid" ><button type="button" class="btn btn-dark mt-1">Save</button></div>
-        </form>
-      </div>
+          </select>
+          <br><br>
+        </div>
+        <div id="btnid"><button type="button" class="btn btn-dark mt-1">Save</button></div>
+      </form>
+    </div>
   </div>
 
   <!--Footer-->
@@ -172,4 +173,5 @@
   </div>
 
 </body>
+
 </html>
