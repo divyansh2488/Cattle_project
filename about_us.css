@@ -1,0 +1,80 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  
+  /*header*/
+  
+  .jumbotron-fluid {
+    background: #7d9f1c;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+  }
+  
+  
+  .up {
+    width: 25%;
+  }
+  
+  .down {
+    width: 75%;
+  }
+  
+  .head_img {
+    border-radius: 50px;
+    width: 70%;
+    height: 200px;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(187, 235, 193);
+    overflow-x: hidden;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 16%;
+  }
+  
+  .sidenav a {
+    padding: 16px 16px 16px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #06680e;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #111010;
+  }
+  
+  .sidenav .icon {
+    display: none;
+  }
+  h1,h3{
+    color: white;
+  }
+  .flexer {
+    display: flex;
+    flex-direction: row;
+    height: 180vh;
+  }
+  
+  .main {
+    /*margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  .footer {
+    height: 5em;
+    background: #7d9f1c;
+    ;
+  }
+  
