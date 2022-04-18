@@ -39,6 +39,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 16%;
+  max-height: 180vh;
 }
 
 .sidenav a {
@@ -62,7 +63,7 @@ h1,h3{
 .flexer {
   display: flex;
   flex-direction: row;
-  height: 180vh;
+  max-height: 180vh;
 }
 
 .main {
