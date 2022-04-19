@@ -13,6 +13,9 @@
   width: 100%;
 }
 
+h1 {
+  color: white;
+}
 
 .up {
   width: 25%;
@@ -27,6 +30,31 @@
   width: 70%;
   height: 200px;
 }
+
+
+@media screen and (max-width:700px) {
+  .jumbotron-fluid{
+    display: block;
+  }
+  .up {
+    width: 100%;
+  }
+
+  .down {
+    width: 100%;
+  }
+
+  .head_img {
+    width: 60%;
+    height: 50%;
+  }
+
+  .jumbotron-fluid h1 {
+    font-size: 28px;
+  }
+}
+
+/*header end*/
 
 .sidenav {
   height: 100%;
