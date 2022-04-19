@@ -101,6 +101,7 @@ h3 {
   padding-bottom: 9px;
   padding-top: 8px;
 }
+<<<<<<< Updated upstream
 
 .popup .tags input,
 select {
@@ -109,6 +110,8 @@ select {
   width: 60%;
 }
 
+=======
+>>>>>>> Stashed changes
 #fm {
   position: absolute;
   top: 50%;
@@ -117,7 +120,7 @@ select {
   background-color: rgb(187, 235, 193);
   font-size: large;
   height: 75vh;
-  width: 30vw;
+  width: 35vw;
   border-radius: 3px;
 }
 
@@ -135,13 +138,23 @@ select {
   background-color: red;
   color: white;
 }
+form label{
+  font-weight: bold;
 
-form input {
+}
+form input,select {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  width: 18.2vw;
   border: 2px solid grey;
   border-radius: 4px;
 }
 
 form input:hover {
+  box-shadow: 4px 4px 12px rgb(188, 192, 188);
+}
+form select:hover {
   box-shadow: 4px 4px 12px rgb(188, 192, 188);
 }
 
@@ -172,5 +185,25 @@ thead {
 #table {
   width: 80vw;
   position: absolute;
+<<<<<<< Updated upstream
   overflow-y: scroll;
 }
+=======
+}
+/* @media screen and (max-width:1150px){
+  #fm{
+    height: 95vh;
+  }
+  #fm label{
+    padding-left: 1vw;
+    display: block;
+    font-size: large;
+  }
+  #fm input,select{
+    position: absolute;
+    left: 3vw;
+    width: 28vw;
+  }
+
+} */
+>>>>>>> Stashed changes
