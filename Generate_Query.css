@@ -2,11 +2,9 @@
   padding: 0px;
   margin: 0px;
   font-family: 'Baloo Bhai 2', cursive;
-  box-sizing: border-box;
 }
 
 /*header*/
-
 .jumbotron-fluid {
   background: #7d9f1c;
   display: flex;
@@ -14,6 +12,14 @@
   width: 100%;
 }
 
+h1,
+h3 {
+  color: white;
+}
+
+h1 {
+  padding-top: 15px;
+}
 
 .up {
   width: 25%;
@@ -29,8 +35,38 @@
   height: 200px;
 }
 
+@media screen and (max-width:900px) {
+  .head_img {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .up {
+    width: 50%;
+  }
+
+  .down {
+    width: 50%;
+  }
+
+  .head_img {
+    width: 100%;
+    height: 60%;
+  }
+
+  .jumbotron-fluid h1,
+  h3 {
+    font-size: 26px;
+    text-align: left;
+  }
+}
+
+/*header end*/
+
 .sidenav {
-  max-height: 180vh;
+  height: auto;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -58,15 +94,55 @@
   display: none;
 }
 
-h1 {
-  color: white;
-}
-
 .flexer {
   display: flex;
   flex-direction: row;
-  height: 180vh;
+  height: auto;
 }
+
+/*sidebar responsive*/
+@media screen and (max-width: 1024px) {
+  .sidenav a:not(all) {
+    display: none;
+  }
+
+  .sidenav a.icon {
+    display: block;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidenav.responsive {
+    position: relative;
+  }
+
+  .sidenav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .sidenav.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flexer {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .sidenav {
+    position: relative;
+  }
+
+}
+
+/*sidebar end*/
 
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
@@ -92,7 +168,7 @@ h1 {
 input[type=text],
 textarea {
 
-  border: 1px solid #ccc;
+  border: 1px solid rgb(134, 133, 133);
   border-radius: 4px;
   width: 50vw;
   padding: 10px;
@@ -132,5 +208,39 @@ h3 {
   text-decoration: underline;
 }
 
-
+@media screen and (max-width: 1024px) {
+  .tags{
+    padding-bottom: 8vh;
+    margin: 0;
+  }
+  form{
+    height: auto !important;
+  }
+  form label{
+    padding-left: 1vw;
+    display: block;
+    font-size: large;
+    font-weight: bold;
+  }
+  form input,textarea {
+    position: absolute;
+    left: 19vw;
+    width: 60vw !important;
+  }
+ 
+}
+@media screen and (max-width: 541px) {
+  .tags{
+    padding-bottom: 8vh;
+    margin: 0;
+  }
+  .container{
+    width: 100vw !important;
+  }
+  form input,textarea {
+    position: absolute;
+    left: 3vw;
+    width: 94vw !important;
+  }
+}
 /* query form end */
