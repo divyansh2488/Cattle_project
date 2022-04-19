@@ -202,6 +202,34 @@ form select:hover {
   transform: translate(-50%, -50%);
 }
 
+/*pop-up responsive*/
+
+@media screen and (max-width:1024px) {
+  #fm {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(5%, -50%);
+    background-color: rgb(187, 235, 193);
+    font-size: large;
+    height: 70%;
+    width: 70%;
+    border-radius: 3px;
+    padding: 1vh;
+  }  
+}
+
+@media screen and (max-width: 425px) {
+  form input {
+    width: 15vh;   
+  }
+  form select {
+    width: 15vh;
+    height: 5vh !important;
+    overflow-y: scroll !important;
+  }
+  
+}
 /*form end*/
 
 /*main table start*/
