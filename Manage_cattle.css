@@ -69,6 +69,51 @@ h3 {
   height: auto;
 }
 
+/*sidebar responsive*/
+@media screen and (max-width: 1024px) {
+  .sidenav a:not(all) {
+    display: none;
+  }
+
+  .sidenav a.icon {
+    display: block;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidenav.responsive {
+    position: relative;
+  }
+
+  .sidenav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .sidenav.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flexer {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .sidenav {
+    position: relative;
+  }
+
+}
+
+/*sidebar end*/
+
+
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px;
