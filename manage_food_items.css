@@ -29,6 +29,28 @@
   height: 200px;
 }
 
+@media screen and (max-width:700px) {
+  .jumbotron-fluid{
+    display: block;
+  }
+  .up {
+    width: 100%;
+  }
+
+  .down {
+    width: 100%;
+  }
+
+  .head_img {
+    width: 60%;
+    height: 50%;
+  }
+
+  .jumbotron-fluid h1 {
+    font-size: 28px;
+  }
+}
+
 .sidenav {
   height: 100%;
   width: 100%;
@@ -40,6 +62,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 16%;
+  height: auto;
   
 }
 
@@ -70,6 +93,50 @@ h3 {
   height: auto;
 }
 
+/*sidebar responsive*/
+@media screen and (max-width: 1024px) {
+  .sidenav a:not(all) {
+    display: none;
+  }
+
+  .sidenav a.icon {
+    display: block;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidenav.responsive {
+    position: relative;
+  }
+
+  .sidenav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .sidenav.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flexer {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .sidenav {
+    position: relative;
+  }
+
+}
+
+/*sidebar end*/
+
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px;
@@ -92,8 +159,9 @@ h3 {
   background-color: rgb(187, 235, 193);
   font-size: large;
   height: 75vh;
-  width: 30vw;
+  width: 60%;
   border-radius: 3px;
+  padding: 3vh;
 }
 
 #fm img {
@@ -156,7 +224,57 @@ form select:hover{
   transform: translate(-50%, -50%);
 }
 
+/*pop-up responsive*/
+
+@media screen and (max-width:1024px) {
+  #fm {
+    left: 10%;
+    transform: translate(5%, -50%);
+    height: 70%;
+    width: 70%;
+    padding: 1vh;
+  }  
+}
+
+@media screen and (max-width: 425px) {
+  #fm {
+    left: 5%;
+    transform: translate(5%, -50%);
+    height: 70%;
+    width: 80%;
+    padding: 1vh;
+  }  
+  form input {
+    width: 15vh;   
+  }
+  form select {
+    width: 15vh;
+    height: 5vh !important;
+    overflow-y: scroll !important;
+  }
+  
+}
+
+@media screen and (max-width: 322px) {
+  #fm {
+    left: 0%;
+    transform: translate(5%, -50%);
+    height: 70%;
+    width: 90%;
+    padding: 1vh;
+  }  
+  form input {
+    width: 15vh;   
+  }
+  form select {
+    width: 15vh;
+    height: 5vh !important;
+    overflow-y: scroll !important;
+  }
+  
+}
 /*form end*/
+
 
 /*main table start*/
 .stb {
