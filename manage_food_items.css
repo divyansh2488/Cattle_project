@@ -240,7 +240,7 @@ form select:hover{
   #fm {
     left: 5%;
     transform: translate(5%, -50%);
-    height: 70%;
+    height: auto;
     width: 80%;
     padding: 1vh;
   }  
@@ -259,7 +259,7 @@ form select:hover{
   #fm {
     left: 0%;
     transform: translate(5%, -50%);
-    height: 70%;
+    height: auto;
     width: 90%;
     padding: 1vh;
   }  
