@@ -14,17 +14,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "sidenav") {
+      x.className += " responsive";
+    } else {
+      x.className = "sidenav";
+    }
+  }
+</script>
 
 <body>
 
   <!--header-->
-  <div class="jumbotron-fluid " style=" background:#7d9f1c; display: flex;padding: 30px;">
-    <div class="col-sm-3 text-center">
-      <a href="index.html"><img class="head_img" src="photos/logo.png" alt="LOGO"
-          style="border-radius: 50px; width: auto; height: 200px;"></a>
-    </div>
-    <div class="col-sm-9 text-center"><br><br>
+  <div class="jumbotron-fluid ">
+    <div class="up text-center"><a href="index.html"><img class="head_img" src="photos/logo.png" alt="LOGO"></a></div>
+    <div class="down text-center">
       <h1> INSTRUCTIONS</h1><br>
       <!-- <div class="btn-group ">
           <button type="button" class="btn btn-secondary" onclick="windowOpen()">ADD NEW CATTLE</button>
@@ -37,7 +46,7 @@
   <div class="flexer">
 
     <!--Side Bar-->
-    <div class="sidenav">
+    <div class="sidenav" id="navbar">
       <a href="manage_cattle.html">Manage cattles</a>
       <a href="manage_food_items.html">Manage Food Items</a>
       <a href="#c">Required cattle Meal</a>
@@ -45,8 +54,13 @@
       <a href="Instruction.html">Instructions</a>
       <a href="about_us.html">About us</a>
       <a href="login_page.html">Log out</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
+    <!-- main body -->
+    <div class="main"></div>
 
   </div>
 
