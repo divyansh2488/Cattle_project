@@ -28,8 +28,33 @@
   height: 200px;
 }
 
+@media screen and (max-width:700px) {
+  .jumbotron-fluid{
+    display: block;
+  }
+  .up {
+    width: 100%;
+  }
+
+  .down {
+    width: 100%;
+  }
+
+  .head_img {
+    width: 60%;
+    height: 50%;
+  }
+
+  .jumbotron-fluid h1,
+  h3 {
+    font-size: 28px;
+  }
+}
+
+/*header end*/
+
 .sidenav {
-  height: 100%;
+  height: auto;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -39,7 +64,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 16%;
-  
+ 
 }
 
 .sidenav a {
@@ -66,12 +91,57 @@ h3 {
 .flexer {
   display: flex;
   flex-direction: row;
-  height: 180vh;
+  height: auto;
 }
+
+/*sidebar responsive*/
+@media screen and (max-width: 1024px) {
+  .sidenav a:not(all) {
+    display: none;
+  }
+
+  .sidenav a.icon {
+    display: block;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidenav.responsive {
+    position: relative;
+  }
+
+  .sidenav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .sidenav.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flexer {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .sidenav {
+    position: relative;
+  }
+
+}
+
+/*sidebar end*/
 
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px;
+  height: auto;
   /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
