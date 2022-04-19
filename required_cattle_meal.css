@@ -191,33 +191,35 @@ input[type=button]:hover {
   background-color: #45a049;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1027px) {
   .tags {
     padding-bottom: 8vh;
-    margin: 0;
+    margin: 20px;
   }
 
   form {
     height: auto !important;
   }
 
+
   form label {
     padding-left: 1vw;
-    display: block;
+    display: inline;
     font-size: large;
     font-weight: bold;
   }
 
-  form input,
+  input[type=text],
   textarea {
     position: absolute;
-    left: 19vw;
-    width: 60vw !important;
+    right: 100px;
+    left: 400px;
+    width: 40vw !important;
   }
 
 }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 546px) {
   .tags {
     padding-bottom: 8vh;
     margin: 0;
@@ -227,7 +229,7 @@ input[type=button]:hover {
     width: 100vw !important;
   }
 
-  form input,
+  input[type=text],
   textarea {
     position: absolute;
     left: 3vw;
@@ -240,9 +242,8 @@ input[type=button]:hover {
 
 /* for table in form  */
 .stb {
-  padding: 20px;
-  height: 50vh;
-  overflow-y: scroll !important;
+  padding: 10px;
+  height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
