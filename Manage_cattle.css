@@ -181,8 +181,8 @@ h3 {
   transform: translate(-50%, -50%);
   background-color: rgb(187, 235, 193);
   font-size: large;
-  height: 75vh;
-  width: 60%;
+  height: auto;
+  width: 40%;
   border-radius: 3px;
   padding: 3vh;
 }
@@ -237,8 +237,8 @@ form select:hover {
   #fm {
     left: 10%;
     transform: translate(5%, -50%);
-    height: 70%;
-    width: 70%;
+    height: auto;
+    width: 60%;
     padding: 1vh;
   }  
 }
