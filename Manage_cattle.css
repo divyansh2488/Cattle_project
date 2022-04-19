@@ -163,8 +163,8 @@ form select:hover {
 .stb {
   padding: 20px;
   width: 100%;
-  height:180vh ;
-  overflow: scroll;
+  height:180vh !important;
+  overflow-y: scroll !important;
 }
 
 thead {
@@ -172,8 +172,7 @@ thead {
 }
 
 #table {
-  width: 80vw;
-  position: absolute;
+  width: 78.5vw;
 }
 
 /* @media screen and (max-width:1150px){

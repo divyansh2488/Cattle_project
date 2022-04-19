@@ -225,18 +225,14 @@ h3 {
 
 /*table start*/
 .stb {
-  overflow-y: scroll;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 25%;
-  height: 50%;
+  height: 180vh;
+  overflow-y: scroll !important;
 }
 
 #sidetable {
-  /* position: absolute; */
-  /* right: 0%; */
-  /* width: 25vw; */
-  height: 50%;
   width: 100%;
   float: right;
 }

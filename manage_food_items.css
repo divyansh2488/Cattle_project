@@ -161,6 +161,8 @@ form select:hover{
 /*main table start*/
 .stb {
   padding: 20px;
+  height: 180vh;
+  overflow-y: scroll !important;
 }
 
 thead {
@@ -168,7 +170,5 @@ thead {
 }
 
 #table {
-  width: 80vw;
-  position: absolute;
-  overflow: scroll;
+  width: 78.5vw;
 }
