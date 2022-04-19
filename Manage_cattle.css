@@ -101,17 +101,6 @@ h3 {
   padding-bottom: 9px;
   padding-top: 8px;
 }
-<<<<<<< Updated upstream
-
-.popup .tags input,
-select {
-  position: absolute;
-  right: 10px;
-  width: 60%;
-}
-
-=======
->>>>>>> Stashed changes
 #fm {
   position: absolute;
   top: 50%;
@@ -185,11 +174,8 @@ thead {
 #table {
   width: 80vw;
   position: absolute;
-<<<<<<< Updated upstream
-  overflow-y: scroll;
 }
-=======
-}
+
 /* @media screen and (max-width:1150px){
   #fm{
     height: 95vh;
@@ -206,4 +192,3 @@ thead {
   }
 
 } */
->>>>>>> Stashed changes
