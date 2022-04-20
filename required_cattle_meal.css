@@ -152,12 +152,17 @@ h3 {
   /* Increased text to enable scrolling */
   padding: 0px 10px;
   height: auto;
-  width: 80vw !important;
+  width: 80%;
   border-radius: 5px;
   background-color: aliceblue;
   padding: 10px;
   margin: 50px;
 }
+
+.main table {
+  margin: 10px;
+}
+
 
 .tags {
   margin-top: 10px;
@@ -191,7 +196,16 @@ input[type=button]:hover {
   background-color: #45a049;
 }
 
-@media screen and (max-width: 1027px) {
+@media screen and (max-width: 1025px) {
+  .main {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .main table {
+    margin-left: 4%;
+  }
+
   .tags {
     padding-bottom: 8vh;
     margin: 20px;
@@ -212,14 +226,47 @@ input[type=button]:hover {
   input[type=text],
   textarea {
     position: absolute;
-    right: 100px;
-    left: 400px;
-    width: 40vw !important;
+    right: 10%;
+    left: 50%;
+    width: 40% !important;
+  }
+
+  input[type=button] {
+    padding: 6px 10px;
+    width: 30%;
+    margin: 0px 0px 50px 40px;
   }
 
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width:570px){
+  input[type=button] {
+    width: 45%;
+    margin: 0px 0px 50px 20px;
+  }
+  input[type=text],
+  textarea {
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100% !important;
+  }
+  .tags {
+    margin: 0;
+    padding-bottom: 8vh;
+  }
+  .main table {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  input[type=button] {
+    width: 60%;
+    margin: 0px 0px 40px 20px;
+  }
+}
+/* @media screen and (max-width: 546px) {
   .tags {
     padding-bottom: 8vh;
     margin: 0;
@@ -235,7 +282,7 @@ input[type=button]:hover {
     left: 3vw;
     width: 94vw !important;
   }
-}
+} */
 
 /* ends */
 
@@ -246,6 +293,7 @@ input[type=button]:hover {
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 6%;
 }
 
 thead {
@@ -254,7 +302,7 @@ thead {
 }
 
 #table {
-  width: 70vw;
+  width: 100%;
 }
 
 /* ends */
