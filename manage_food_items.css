@@ -61,7 +61,7 @@
   overflow-x: hidden;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 16%;
+  flex-basis: 17%;
   height: auto;
   
 }
@@ -293,6 +293,14 @@ thead {
 
 
 /* password popup */
+#pass{
+  position: absolute;
+  top: 29vh;
+  left: 65.2vw;
+  z-index: 5;
+  width: 43px;
+  height: 32px;
+}
 #password{
   position: fixed;
   top: 0;

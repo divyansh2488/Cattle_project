@@ -17,9 +17,9 @@
 </head>
 
 <script>
-  function windowClose() {
-    document.getElementById("password").style.display = "none";
-  }
+    function windowClose() {
+  document.getElementById("password").style.display = "none";
+}
   function changePassword() {
     document.getElementById("password").style.display = "block";
   }
@@ -67,7 +67,7 @@
     </div>
     
     <div id="password">
-      <i class="bi bi-x-lg" onclick="windowClose()"></i><br>
+      <div id="pass" onclick="windowClose()"></div>
       <iframe id="iframe" src="change_password.html" width="531" height="320"></iframe>
     </div>
 
