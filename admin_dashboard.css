@@ -229,8 +229,8 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  height: 56vh;
-  width: 39vw;
+  height: 365px;
+  width: 531px;
 }
 #close{
   float: right ;
@@ -253,7 +253,7 @@ h3 {
   width: 100vw;
   }
   #pass{
-    height: 75vh;
+    height: 80vh;
     width: 100vw;
     font-size: larger;
     }
