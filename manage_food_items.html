@@ -17,6 +17,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
 </head>
 <script>
+  function Close() {
+    document.getElementById("password").style.display = "none";
+  }
+  function changePassword() {
+    document.getElementById("password").style.display = "block";
+  }
   function windowClose() {
     document.getElementById("id1").style.display = "none";
   }
@@ -68,13 +74,19 @@
       <a href="manage_cattle.html">Manage cattles</a>
       <a href="manage_food_items.html">Manage Food Items</a>
       <a href="required_cattle_meal.html">Required cattle Meal</a>
-      <a href="change_password.html">Change Password</a>
+      <a href="javascript:changePassword()">Change Password</a>
       <a href="Instruction.html">Instructions</a>
       <a href="Generate_Query.html">Generate Query </a>
       <a href="login_page.html">Log out</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
+    </div>
+
+
+    <div id="password">
+      <i class="bi bi-x-lg" onclick="Close()"></i><br>
+      <iframe id="iframe" src="change_password.html" width="531" height="320"></iframe>
     </div>
 
     <!--table-->
@@ -134,16 +146,6 @@
             <td><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></td></a>
           </tr>
           <tr>
-           <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="#"><img src="photos/close.png" alt="delete" style="height: 20px;"></td></a>
-            <td><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></td></a>
-          </tr>
-          <tr>
             <td>3</td>
             <td></td>
             <td></td>
@@ -184,7 +186,17 @@
             <td><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></td></a>
           </tr>
           <tr>
-            
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="#"><img src="photos/close.png" alt="delete" style="height: 20px;"></td></a>
+            <td><a href="#"><img src="photos/edit .png" alt="edit" style="height: 20px;"></td></a>
+          </tr>
+          <tr>
+
             <td>3</td>
             <td></td>
             <td></td>

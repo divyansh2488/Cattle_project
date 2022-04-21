@@ -171,3 +171,18 @@ h3 {
   transform: translate(-50%, -50%);
   border-radius: 10px;
 }
+#password .bi {
+  position: absolute;
+  right: 0;
+  height:30px;
+  width: 30px;
+  text-align: center;
+  padding-top: 3px;
+  transition: .1s ease-in-out;
+}
+
+#password .bi:hover {
+  background-color: red;
+  color: white;
+}
+/* end */

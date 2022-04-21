@@ -18,6 +18,12 @@
 </head>
 
 <script>
+    function Close() {
+        document.getElementById("password").style.display = "none";
+    }
+    function changePassword() {
+        document.getElementById("password").style.display = "block";
+    }
     function myFunction() {
         var x = document.getElementById("navbar");
         if (x.className === "sidenav") {
@@ -50,7 +56,7 @@
             <a href="manage_cattle.html">Manage cattles</a>
             <a href="manage_food_items.html">Manage Food Items</a>
             <a href="required_cattle_meal.html">Required cattle Meal</a>
-            <a href="change_password.html">Change Password</a>
+            <a href="javascript:changePassword()">Change Password</a>
             <a href="Instruction.html">Instructions</a>
             <a href="Generate_Query.html">Generate Query </a>
             <a href="login_page.html">Log out</a>
@@ -59,6 +65,10 @@
             </a>
         </div>
 
+        <div id="password">
+            <i class="bi bi-x-lg" onclick="Close()"></i><br>
+            <iframe id="iframe" src="change_password.html" width="531" height="320"></iframe>
+        </div>
         <!-- main body -->
         <div class="main">
             <form>

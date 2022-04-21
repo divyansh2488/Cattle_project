@@ -235,3 +235,37 @@ h3 {
 thead {
   height: 3vh;
 }
+/* password popup */
+#password{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(6px);
+  display: none;
+  z-index: 500;
+  border-radius: 2px;
+}
+#iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+#password .bi {
+  position: absolute;
+  right: 0;
+  height:30px;
+  width: 30px;
+  text-align: center;
+  padding-top: 3px;
+  transition: .1s ease-in-out;
+}
+
+#password .bi:hover {
+  background-color: red;
+  color: white;
+}
+/* end */
