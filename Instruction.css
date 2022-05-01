@@ -140,18 +140,44 @@ h3 {
 
 .main {
   /*margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px;
   height: auto;
+  font-size: 19px;
   /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  padding: 7px 30px;
 }
-
+.heading{
+  color: royalblue;
+  font-size: 28px;
+}
+.main ol li{
+  padding-bottom: 7px;
+}
+.main ol .heading{
+  font-size: 21px;
+  color: red;
+}
+ol li::marker {
+  font-weight: bold;
+}
+.main ol img{
+  width: 60vw;
+  height: auto;
+}
 .footer {
   height: 5em;
   background: #7d9f1c;
   ;
 }
-
+/* main responsive */
+@media screen and (max-width: 700px) {
+  .main{
+  padding: 7px 0px;
+  padding-left: 20px !important;
+  }
+  .main ol img{
+    width: 93.8vw;
+  }
+}
 /* password popup */
 #password{
   position: fixed;
