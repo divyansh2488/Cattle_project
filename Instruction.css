@@ -237,9 +237,11 @@ ol li::marker {
   margin: 0 auto;
 }
 .container{
+  background:rgb(203, 238, 213);
   width: 100%;
- margin: 10%;
+  margin: 2%;
  height: auto;
+ border-radius: 8px;
 }
 
 .avatar {
