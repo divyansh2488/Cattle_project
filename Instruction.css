@@ -230,3 +230,34 @@ ol li::marker {
     }
 }
 /* end */
+
+
+/* about us */
+.container{
+  width: 100%;
+ margin: 10%;
+ height: auto;
+}
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.column {
+  float: left;
+  width: 10%;
+  margin-left: 10%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column p{
+  text-align: center;
+  padding-left: 20px;
+}
+/* end */
